@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "voice-insights-sdk": "file:/Users/acrites/projects/personal/voicelabs-nodejs-sdk"
+  }
+}

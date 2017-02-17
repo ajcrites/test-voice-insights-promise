@@ -1,0 +1,12 @@
+{
+  "name": "voice-insights-tester",
+  "description": "test-voice-insights",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::169510895721:role/voice-insights-tester_lambda_function",
+  "handler": "lib.default",
+  "hooks": {
+    "build": "yarn install --production && ../../node_modules/.bin/webpack --config ../../webpack.config.js --bail",
+    "clean": "rm -rf lib node_modules project.json"
+  }
+}
